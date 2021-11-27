@@ -14,6 +14,17 @@
 		5975A41E274FC69C006AF24A /* GuessAgeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A41D274FC69C006AF24A /* GuessAgeAppTests.swift */; };
 		5975A428274FC69C006AF24A /* GuessAgeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A427274FC69C006AF24A /* GuessAgeAppUITests.swift */; };
 		5975A42A274FC69C006AF24A /* GuessAgeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A429274FC69C006AF24A /* GuessAgeAppUITestsLaunchTests.swift */; };
+		5975A43C274FF2CA006AF24A /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A43B274FF2CA006AF24A /* RandomUser.swift */; };
+		5975A43E274FF49A006AF24A /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A43D274FF49A006AF24A /* UserList.swift */; };
+		5975A440274FF4DF006AF24A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A43F274FF4DF006AF24A /* User.swift */; };
+		5975A443274FF69A006AF24A /* CustomStringConvertible+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A442274FF69A006AF24A /* CustomStringConvertible+Description.swift */; };
+		5975A446274FF9EF006AF24A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A445274FF9EF006AF24A /* APIError.swift */; };
+		5975A448274FFBC7006AF24A /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A447274FFBC7006AF24A /* NetworkController.swift */; };
+		5975A44C274FFDAD006AF24A /* RandomUserEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A44B274FFDAD006AF24A /* RandomUserEndPoint.swift */; };
+		5975A44E275000DF006AF24A /* DummyEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A44D275000DF006AF24A /* DummyEndPoint.swift */; };
+		5975A4502750D4D8006AF24A /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A44F2750D4D8006AF24A /* Parsing.swift */; };
+		5975A4522750F6B8006AF24A /* Respone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A4512750F6B8006AF24A /* Respone.swift */; };
+		5975A4542750FD40006AF24A /* RandomUserLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A4532750FD40006AF24A /* RandomUserLogicController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +55,17 @@
 		5975A423274FC69C006AF24A /* GuessAgeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessAgeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5975A427274FC69C006AF24A /* GuessAgeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessAgeAppUITests.swift; sourceTree = "<group>"; };
 		5975A429274FC69C006AF24A /* GuessAgeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessAgeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5975A43B274FF2CA006AF24A /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
+		5975A43D274FF49A006AF24A /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		5975A43F274FF4DF006AF24A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5975A442274FF69A006AF24A /* CustomStringConvertible+Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomStringConvertible+Description.swift"; sourceTree = "<group>"; };
+		5975A445274FF9EF006AF24A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		5975A447274FFBC7006AF24A /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		5975A44B274FFDAD006AF24A /* RandomUserEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserEndPoint.swift; sourceTree = "<group>"; };
+		5975A44D275000DF006AF24A /* DummyEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyEndPoint.swift; sourceTree = "<group>"; };
+		5975A44F2750D4D8006AF24A /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
+		5975A4512750F6B8006AF24A /* Respone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respone.swift; sourceTree = "<group>"; };
+		5975A4532750FD40006AF24A /* RandomUserLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserLogicController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +116,8 @@
 		5975A40B274FC695006AF24A /* GuessAgeApp */ = {
 			isa = PBXGroup;
 			children = (
+				5975A444274FF8F6006AF24A /* Common */,
+				5975A441274FF666006AF24A /* Extensions */,
 				5975A43A274FC985006AF24A /* Networking */,
 				5975A438274FC8A5006AF24A /* View */,
 				5975A436274FC88F006AF24A /* Model */,
@@ -133,6 +157,9 @@
 		5975A436274FC88F006AF24A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5975A43B274FF2CA006AF24A /* RandomUser.swift */,
+				5975A43D274FF49A006AF24A /* UserList.swift */,
+				5975A43F274FF4DF006AF24A /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,8 +174,30 @@
 		5975A43A274FC985006AF24A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				5975A447274FFBC7006AF24A /* NetworkController.swift */,
+				5975A44B274FFDAD006AF24A /* RandomUserEndPoint.swift */,
+				5975A44D275000DF006AF24A /* DummyEndPoint.swift */,
+				5975A4512750F6B8006AF24A /* Respone.swift */,
+				5975A4532750FD40006AF24A /* RandomUserLogicController.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		5975A441274FF666006AF24A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5975A442274FF69A006AF24A /* CustomStringConvertible+Description.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5975A444274FF8F6006AF24A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5975A445274FF9EF006AF24A /* APIError.swift */,
+				5975A44F2750D4D8006AF24A /* Parsing.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +330,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5975A4522750F6B8006AF24A /* Respone.swift in Sources */,
+				5975A448274FFBC7006AF24A /* NetworkController.swift in Sources */,
+				5975A44E275000DF006AF24A /* DummyEndPoint.swift in Sources */,
+				5975A43E274FF49A006AF24A /* UserList.swift in Sources */,
 				5975A40F274FC695006AF24A /* ContentView.swift in Sources */,
 				5975A40D274FC695006AF24A /* GuessAgeAppApp.swift in Sources */,
+				5975A4542750FD40006AF24A /* RandomUserLogicController.swift in Sources */,
+				5975A44C274FFDAD006AF24A /* RandomUserEndPoint.swift in Sources */,
+				5975A440274FF4DF006AF24A /* User.swift in Sources */,
+				5975A4502750D4D8006AF24A /* Parsing.swift in Sources */,
+				5975A443274FF69A006AF24A /* CustomStringConvertible+Description.swift in Sources */,
+				5975A43C274FF2CA006AF24A /* RandomUser.swift in Sources */,
+				5975A446274FF9EF006AF24A /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
