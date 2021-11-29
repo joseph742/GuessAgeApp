@@ -14,7 +14,7 @@ struct UserList: Codable, CustomStringConvertible {
 }
 
 // MARK: - Datum
-struct Datum: Codable, CustomStringConvertible {
+struct Datum: Codable, CustomStringConvertible, Identifiable {
     var id: String
     var title: Title
     var firstName, lastName: String

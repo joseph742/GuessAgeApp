@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import UIKit
 
-protocol UsersLogicControllerProtocol: AnyObject {
+protocol RandomUserLogicControllerProtocol: AnyObject {
     var networkController: NetworkControllerProtocol { get }
     
     func getUser() -> AnyPublisher<RandomUser, APIError>
@@ -17,7 +17,7 @@ protocol UsersLogicControllerProtocol: AnyObject {
 }
 
 
-final class RandomUserLogicController: UsersLogicControllerProtocol {
+final class RandomUserLogicController: RandomUserLogicControllerProtocol {
     
     var networkController: NetworkControllerProtocol
     

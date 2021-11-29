@@ -129,7 +129,7 @@ struct RandomUserView: View {
             .navigationTitle("Guess age")
             .navigationBarTitleDisplayMode(.automatic)
             .toolbar {
-                NavigationLink(destination: UserView()) {
+                NavigationLink(destination: UserView(viewModel: UserViewModel())) {
                     Image(systemName: "person.crop.rectangle.stack.fill")
                         .font(.title)
                         .foregroundColor(Color(hex: "FFFFB3"))
