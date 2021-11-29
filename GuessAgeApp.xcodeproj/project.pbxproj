@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593F32392754F6A800E809DF /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F32382754F6A700E809DF /* UserView.swift */; };
+		593F323B2754F6BC00E809DF /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F323A2754F6BC00E809DF /* UserRowView.swift */; };
 		5975A40D274FC695006AF24A /* GuessAgeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A40C274FC695006AF24A /* GuessAgeAppApp.swift */; };
 		5975A40F274FC695006AF24A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A40E274FC695006AF24A /* ContentView.swift */; };
 		5975A411274FC69C006AF24A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5975A410274FC69C006AF24A /* Assets.xcassets */; };
@@ -25,6 +27,12 @@
 		5975A4502750D4D8006AF24A /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A44F2750D4D8006AF24A /* Parsing.swift */; };
 		5975A4522750F6B8006AF24A /* Respone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A4512750F6B8006AF24A /* Respone.swift */; };
 		5975A4542750FD40006AF24A /* RandomUserLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A4532750FD40006AF24A /* RandomUserLogicController.swift */; };
+		59BE3ADC2752441500F8998E /* RandomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BE3ADB2752441500F8998E /* RandomUserViewModel.swift */; };
+		59BE3ADF2752495F00F8998E /* RandomUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BE3ADE2752495F00F8998E /* RandomUserView.swift */; };
+		59BE3AE12752714900F8998E /* YearSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BE3AE02752714900F8998E /* YearSelectorView.swift */; };
+		59BE3AE4275271E900F8998E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BE3AE3275271E900F8998E /* Constants.swift */; };
+		59BE3AE62753A4FD00F8998E /* Color + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BE3AE52753A4FD00F8998E /* Color + Hex.swift */; };
+		59BE3AE82753ACAF00F8998E /* SuccessOrFailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BE3AE72753ACAF00F8998E /* SuccessOrFailureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		593F32382754F6A700E809DF /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		593F323A2754F6BC00E809DF /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		5975A409274FC695006AF24A /* GuessAgeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessAgeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5975A40C274FC695006AF24A /* GuessAgeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessAgeAppApp.swift; sourceTree = "<group>"; };
 		5975A40E274FC695006AF24A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +76,12 @@
 		5975A44F2750D4D8006AF24A /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		5975A4512750F6B8006AF24A /* Respone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respone.swift; sourceTree = "<group>"; };
 		5975A4532750FD40006AF24A /* RandomUserLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserLogicController.swift; sourceTree = "<group>"; };
+		59BE3ADB2752441500F8998E /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
+		59BE3ADE2752495F00F8998E /* RandomUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserView.swift; sourceTree = "<group>"; };
+		59BE3AE02752714900F8998E /* YearSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearSelectorView.swift; sourceTree = "<group>"; };
+		59BE3AE3275271E900F8998E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		59BE3AE52753A4FD00F8998E /* Color + Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Hex.swift"; sourceTree = "<group>"; };
+		59BE3AE72753ACAF00F8998E /* SuccessOrFailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessOrFailureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +183,12 @@
 		5975A438274FC8A5006AF24A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				59BE3ADD2752441B00F8998E /* ViewModel */,
+				59BE3ADE2752495F00F8998E /* RandomUserView.swift */,
+				59BE3AE02752714900F8998E /* YearSelectorView.swift */,
+				59BE3AE72753ACAF00F8998E /* SuccessOrFailureView.swift */,
+				593F32382754F6A700E809DF /* UserView.swift */,
+				593F323A2754F6BC00E809DF /* UserRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				5975A442274FF69A006AF24A /* CustomStringConvertible+Description.swift */,
+				59BE3AE52753A4FD00F8998E /* Color + Hex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,8 +219,17 @@
 			children = (
 				5975A445274FF9EF006AF24A /* APIError.swift */,
 				5975A44F2750D4D8006AF24A /* Parsing.swift */,
+				59BE3AE3275271E900F8998E /* Constants.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		59BE3ADD2752441B00F8998E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				59BE3ADB2752441500F8998E /* RandomUserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,9 +363,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5975A4522750F6B8006AF24A /* Respone.swift in Sources */,
+				59BE3AE4275271E900F8998E /* Constants.swift in Sources */,
 				5975A448274FFBC7006AF24A /* NetworkController.swift in Sources */,
+				59BE3ADF2752495F00F8998E /* RandomUserView.swift in Sources */,
 				5975A44E275000DF006AF24A /* DummyEndPoint.swift in Sources */,
+				59BE3AE62753A4FD00F8998E /* Color + Hex.swift in Sources */,
 				5975A43E274FF49A006AF24A /* UserList.swift in Sources */,
+				593F323B2754F6BC00E809DF /* UserRowView.swift in Sources */,
+				593F32392754F6A800E809DF /* UserView.swift in Sources */,
+				59BE3ADC2752441500F8998E /* RandomUserViewModel.swift in Sources */,
 				5975A40F274FC695006AF24A /* ContentView.swift in Sources */,
 				5975A40D274FC695006AF24A /* GuessAgeAppApp.swift in Sources */,
 				5975A4542750FD40006AF24A /* RandomUserLogicController.swift in Sources */,
@@ -342,6 +380,8 @@
 				5975A4502750D4D8006AF24A /* Parsing.swift in Sources */,
 				5975A443274FF69A006AF24A /* CustomStringConvertible+Description.swift in Sources */,
 				5975A43C274FF2CA006AF24A /* RandomUser.swift in Sources */,
+				59BE3AE12752714900F8998E /* YearSelectorView.swift in Sources */,
+				59BE3AE82753ACAF00F8998E /* SuccessOrFailureView.swift in Sources */,
 				5975A446274FF9EF006AF24A /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
