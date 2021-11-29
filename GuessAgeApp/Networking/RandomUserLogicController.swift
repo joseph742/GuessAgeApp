@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import UIKit
 
 protocol UsersLogicControllerProtocol: AnyObject {
     var networkController: NetworkControllerProtocol { get }
@@ -17,6 +18,7 @@ protocol UsersLogicControllerProtocol: AnyObject {
 
 
 final class RandomUserLogicController: UsersLogicControllerProtocol {
+    
     var networkController: NetworkControllerProtocol
     
     init(networkController: NetworkControllerProtocol) {
@@ -27,4 +29,5 @@ final class RandomUserLogicController: UsersLogicControllerProtocol {
         let endPoint = RandomUserEndPoint.user
         return networkController.request(type: RandomUser.self, components: endPoint.components, headers: endPoint.headers)
     }
+    
 }

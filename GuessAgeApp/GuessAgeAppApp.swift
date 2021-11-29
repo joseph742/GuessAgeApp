@@ -11,7 +11,8 @@ import SwiftUI
 struct GuessAgeAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = RandomUserViewModel()
+            RandomUserView(viewModel: viewModel)
         }
     }
 }

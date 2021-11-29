@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import UIKit
 
 protocol NetworkControllerProtocol: AnyObject {
     typealias Headers = [String: Any]
@@ -79,11 +80,6 @@ class NetworkController: NetworkControllerProtocol {
             .flatMap(maxPublishers: .max(1)) { pair in
                 decode(pair.data)
             }
-            .catch { _ in
-                Empty()
-            }
             .eraseToAnyPublisher()
     }
-    
-    
 }
