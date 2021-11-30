@@ -26,6 +26,7 @@ struct Dob: Codable, CustomStringConvertible {
 
 // MARK: - Location
 struct Location: Codable, CustomStringConvertible {
+    var street: Street
     var city, state, country: String
     var postcode: Int
     var coordinates: Coordinates
@@ -35,6 +36,12 @@ struct Location: Codable, CustomStringConvertible {
 // MARK: - Coordinates
 struct Coordinates: Codable, CustomStringConvertible {
     var latitude, longitude: String
+}
+
+// MARK: - Street
+struct Street: Codable, CustomStringConvertible {
+    var number: Int
+    var name: String
 }
 
 // MARK: - Timezone

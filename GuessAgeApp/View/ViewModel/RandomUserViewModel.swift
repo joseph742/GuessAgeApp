@@ -11,6 +11,7 @@ import UIKit
 
 class RandomUserViewModel: ObservableObject {
     @Published var randomUserData: RandomUser?
+    @Published var addedUser: Datum?
     @Published var birthYear = 0
     @Published var showYearSelector = false
     @Published var showSuccessOrFailureView = false
@@ -26,10 +27,11 @@ class RandomUserViewModel: ObservableObject {
             .map { [unowned self] yearSelected in
                 if let userAge = self.randomUserData?.results[0].dob.age, let gender = self.randomUserData?.results[0].gender, yearSelected > 0 {
                     
-                    if (userAge - 8)...(userAge + 8) ~= yearSelected {
+                    if (userAge - 10)...(userAge + 10) ~= yearSelected {
                         successOrFailure = true
                         message = "Congratulations \(getGenderPronoun(gender: gender)) is \(userAge) years old"
                         birthYear = 0
+                        addUser()
                     } else {
                         successOrFailure = false
                         message = "Sorry \(getGenderPronoun(gender: gender)) is \(userAge) years old"
@@ -75,6 +77,33 @@ class RandomUserViewModel: ObservableObject {
             return "he"
         default:
             return "she"
+        }
+    }
+    
+    func addUser() {
+        
+        if let result = randomUserData?.results[0] {
+            let networkController = NetworkController()
+            let logicController = UsersLogicController(networkController: networkController)
+            
+            logicController
+                .addUser(result: result)
+                .receive(on: DispatchQueue.main)
+                .sink { completion in
+                    switch completion {
+                    case .failure(let error):
+                        print(error.localizedDescription)
+                        
+                    case .finished:
+                        break
+                    }
+                } receiveValue: { [unowned self] newUser in
+                    self.addedUser = newUser
+                    
+                }
+                .store(in: &subscriptions)
+        } else {
+            print("There was no data to save")
         }
     }
 }
