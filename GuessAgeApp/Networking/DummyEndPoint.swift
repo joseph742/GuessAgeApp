@@ -41,7 +41,7 @@ extension DummyEndPoint {
         return DummyEndPoint(path: "/user")
     }
     
-    static func users(id: String) -> Self {
+    static func user(id: String) -> Self {
         return DummyEndPoint(path: "/user/\(id)")
     }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		593F32392754F6A800E809DF /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F32382754F6A700E809DF /* UserView.swift */; };
 		593F323B2754F6BC00E809DF /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F323A2754F6BC00E809DF /* UserRowView.swift */; };
+		593F323D2754FF7B00E809DF /* UserLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F323C2754FF7B00E809DF /* UserLogicController.swift */; };
+		593F323F2755030600E809DF /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F323E2755030600E809DF /* UserViewModel.swift */; };
 		5975A40D274FC695006AF24A /* GuessAgeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A40C274FC695006AF24A /* GuessAgeAppApp.swift */; };
 		5975A40F274FC695006AF24A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A40E274FC695006AF24A /* ContentView.swift */; };
 		5975A411274FC69C006AF24A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5975A410274FC69C006AF24A /* Assets.xcassets */; };
@@ -55,6 +57,8 @@
 /* Begin PBXFileReference section */
 		593F32382754F6A700E809DF /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		593F323A2754F6BC00E809DF /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		593F323C2754FF7B00E809DF /* UserLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogicController.swift; sourceTree = "<group>"; };
+		593F323E2755030600E809DF /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		5975A409274FC695006AF24A /* GuessAgeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessAgeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5975A40C274FC695006AF24A /* GuessAgeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessAgeAppApp.swift; sourceTree = "<group>"; };
 		5975A40E274FC695006AF24A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 				5975A44D275000DF006AF24A /* DummyEndPoint.swift */,
 				5975A4512750F6B8006AF24A /* Respone.swift */,
 				5975A4532750FD40006AF24A /* RandomUserLogicController.swift */,
+				593F323C2754FF7B00E809DF /* UserLogicController.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				59BE3ADB2752441500F8998E /* RandomUserViewModel.swift */,
+				593F323E2755030600E809DF /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -367,10 +373,12 @@
 				5975A448274FFBC7006AF24A /* NetworkController.swift in Sources */,
 				59BE3ADF2752495F00F8998E /* RandomUserView.swift in Sources */,
 				5975A44E275000DF006AF24A /* DummyEndPoint.swift in Sources */,
+				593F323D2754FF7B00E809DF /* UserLogicController.swift in Sources */,
 				59BE3AE62753A4FD00F8998E /* Color + Hex.swift in Sources */,
 				5975A43E274FF49A006AF24A /* UserList.swift in Sources */,
 				593F323B2754F6BC00E809DF /* UserRowView.swift in Sources */,
 				593F32392754F6A800E809DF /* UserView.swift in Sources */,
+				593F323F2755030600E809DF /* UserViewModel.swift in Sources */,
 				59BE3ADC2752441500F8998E /* RandomUserViewModel.swift in Sources */,
 				5975A40F274FC695006AF24A /* ContentView.swift in Sources */,
 				5975A40D274FC695006AF24A /* GuessAgeAppApp.swift in Sources */,
