@@ -50,6 +50,7 @@ struct UserRowView: View {
                 }
             }
         }
+        .listRowBackground(Color(hex: "FFFFB3"))
     }
 }
 

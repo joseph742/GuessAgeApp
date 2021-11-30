@@ -34,7 +34,6 @@ class UserViewModel: ObservableObject {
             }, receiveValue: { [weak self] users in
                 guard let self = self else { return }
                 self.users = users
-                print(users)
             })
             .store(in: &subscriptions)
 

@@ -12,6 +12,7 @@ struct UserView: View {
     @ObservedObject var viewModel: UserViewModel
     
     init(viewModel: UserViewModel) {
+        UITableView.appearance().backgroundColor = UIColor(Color(hex: "D11149"))
         self.viewModel = viewModel
     }
     var body: some View {
