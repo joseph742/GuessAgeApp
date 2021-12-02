@@ -14,10 +14,12 @@ protocol UsersLogicControllerProtocol: AnyObject {
     
     func getUsers() -> AnyPublisher<UserList, APIError>
     func getUser(id: String) -> AnyPublisher<User, APIError>
+    func addUser(result: Result) -> AnyPublisher<Datum, APIError>
 }
 
 
 final class UsersLogicController: UsersLogicControllerProtocol {
+    
     var networkController: NetworkControllerProtocol
     
     init(networkController: NetworkControllerProtocol) {
@@ -34,5 +36,8 @@ final class UsersLogicController: UsersLogicControllerProtocol {
         return networkController.request(type: User.self, components: endPoint.components, headers: endPoint.headers)
     }
     
-    
+    func addUser(result: Result) -> AnyPublisher<Datum, APIError> {
+        let endPoint = DummyEndPoint.addUser(result: result)
+        return networkController.post(type: Datum.self, components: endPoint.components, headers: endPoint.headers, body: endPoint.queryItems)
+    }
 }

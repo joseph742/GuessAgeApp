@@ -44,4 +44,29 @@ extension DummyEndPoint {
     static func user(id: String) -> Self {
         return DummyEndPoint(path: "/user/\(id)")
     }
+    
+    static func addUser(result: Result) -> Self {
+        
+        let bodyData = [
+            URLQueryItem(name: "title", value: result.name.title.lowercased()),
+            URLQueryItem(name: "firstName", value: result.name.first),
+            URLQueryItem(name: "lastName", value: result.name.last),
+            URLQueryItem(name: "email", value: result.email),
+            URLQueryItem(name: "picture", value: result.picture.medium),
+            URLQueryItem(name: "gender", value: result.gender),
+            URLQueryItem(name: "dateOfBirth", value: result.dob.date),
+            URLQueryItem(name: "phone", value: result.phone),
+            URLQueryItem(name: "location[street]", value: result.location.street.name),
+            URLQueryItem(name: "location[city]", value: result.location.city),
+            URLQueryItem(name: "location[state]", value: result.location.state),
+            URLQueryItem(name: "location[country]", value: result.location.country),
+            URLQueryItem(name: "location[timezone]", value: result.location.timezone.offset)
+        ]
+        
+        
+        
+        
+        
+        return DummyEndPoint(path: "/user/create", queryItems: bodyData)
+    }
 }
