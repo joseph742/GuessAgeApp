@@ -2,7 +2,7 @@
 //  SuccessOrFailureView.swift
 //  GuessAgeApp
 //
-//  Created by Qasim Ahmed on 28/11/2021.
+//  Created by Joseph Umoru on 28/11/2021.
 //
 
 import SwiftUI

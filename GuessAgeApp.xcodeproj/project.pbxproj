@@ -11,6 +11,16 @@
 		593F323B2754F6BC00E809DF /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F323A2754F6BC00E809DF /* UserRowView.swift */; };
 		593F323D2754FF7B00E809DF /* UserLogicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F323C2754FF7B00E809DF /* UserLogicController.swift */; };
 		593F323F2755030600E809DF /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F323E2755030600E809DF /* UserViewModel.swift */; };
+		594BA37027590927008264FF /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BA36F27590927008264FF /* CustomError.swift */; };
+		594BA37227590992008264FF /* ErrorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BA37127590992008264FF /* ErrorStatus.swift */; };
+		594BA37727590C8B008264FF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BA37627590C8B008264FF /* Endpoint.swift */; };
+		594BA37927590D07008264FF /* HTTPComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BA37827590D07008264FF /* HTTPComponents.swift */; };
+		594BA37B27590D36008264FF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BA37A27590D36008264FF /* HTTPMethod.swift */; };
+		594BA37D27590D5F008264FF /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BA37C27590D5F008264FF /* HTTPTask.swift */; };
+		594BA37F27590F29008264FF /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BA37E27590F29008264FF /* RequestController.swift */; };
+		594BA38427597181008264FF /* DummyAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BA38327597181008264FF /* DummyAPIConfig.swift */; };
+		594BA386275971A2008264FF /* RandomUserAPIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BA385275971A2008264FF /* RandomUserAPIConfig.swift */; };
+		594BA388275971ED008264FF /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594BA387275971ED008264FF /* APIEnvironment.swift */; };
 		5975A40D274FC695006AF24A /* GuessAgeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A40C274FC695006AF24A /* GuessAgeAppApp.swift */; };
 		5975A40F274FC695006AF24A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975A40E274FC695006AF24A /* ContentView.swift */; };
 		5975A411274FC69C006AF24A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5975A410274FC69C006AF24A /* Assets.xcassets */; };
@@ -59,6 +69,16 @@
 		593F323A2754F6BC00E809DF /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		593F323C2754FF7B00E809DF /* UserLogicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogicController.swift; sourceTree = "<group>"; };
 		593F323E2755030600E809DF /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		594BA36F27590927008264FF /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		594BA37127590992008264FF /* ErrorStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorStatus.swift; sourceTree = "<group>"; };
+		594BA37627590C8B008264FF /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		594BA37827590D07008264FF /* HTTPComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPComponents.swift; sourceTree = "<group>"; };
+		594BA37A27590D36008264FF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		594BA37C27590D5F008264FF /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		594BA37E27590F29008264FF /* RequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
+		594BA38327597181008264FF /* DummyAPIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyAPIConfig.swift; sourceTree = "<group>"; };
+		594BA385275971A2008264FF /* RandomUserAPIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserAPIConfig.swift; sourceTree = "<group>"; };
+		594BA387275971ED008264FF /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
 		5975A409274FC695006AF24A /* GuessAgeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessAgeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5975A40C274FC695006AF24A /* GuessAgeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessAgeAppApp.swift; sourceTree = "<group>"; };
 		5975A40E274FC695006AF24A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +133,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		594BA36E27590899008264FF /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				594BA36F27590927008264FF /* CustomError.swift */,
+				594BA37127590992008264FF /* ErrorStatus.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		594BA37327590C0D008264FF /* RequestComponents */ = {
+			isa = PBXGroup;
+			children = (
+				594BA38227597062008264FF /* Endpoints */,
+				594BA37827590D07008264FF /* HTTPComponents.swift */,
+				594BA37A27590D36008264FF /* HTTPMethod.swift */,
+				594BA37C27590D5F008264FF /* HTTPTask.swift */,
+				594BA38327597181008264FF /* DummyAPIConfig.swift */,
+				594BA385275971A2008264FF /* RandomUserAPIConfig.swift */,
+				594BA387275971ED008264FF /* APIEnvironment.swift */,
+			);
+			path = RequestComponents;
+			sourceTree = "<group>";
+		};
+		594BA38027590FD4008264FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				594BA37E27590F29008264FF /* RequestController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		594BA3812759704D008264FF /* LogicControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5975A4532750FD40006AF24A /* RandomUserLogicController.swift */,
+				593F323C2754FF7B00E809DF /* UserLogicController.swift */,
+			);
+			path = LogicControllers;
+			sourceTree = "<group>";
+		};
+		594BA38227597062008264FF /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				594BA37627590C8B008264FF /* Endpoint.swift */,
+				5975A44D275000DF006AF24A /* DummyEndPoint.swift */,
+				5975A44B274FFDAD006AF24A /* RandomUserEndPoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
 		5975A400274FC695006AF24A = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +206,7 @@
 		5975A40B274FC695006AF24A /* GuessAgeApp */ = {
 			isa = PBXGroup;
 			children = (
+				594BA36E27590899008264FF /* ErrorHandling */,
 				5975A444274FF8F6006AF24A /* Common */,
 				5975A441274FF666006AF24A /* Extensions */,
 				5975A43A274FC985006AF24A /* Networking */,
@@ -200,12 +271,11 @@
 		5975A43A274FC985006AF24A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				594BA3812759704D008264FF /* LogicControllers */,
+				594BA38027590FD4008264FF /* Controllers */,
+				594BA37327590C0D008264FF /* RequestComponents */,
 				5975A447274FFBC7006AF24A /* NetworkController.swift */,
-				5975A44B274FFDAD006AF24A /* RandomUserEndPoint.swift */,
-				5975A44D275000DF006AF24A /* DummyEndPoint.swift */,
 				5975A4512750F6B8006AF24A /* Respone.swift */,
-				5975A4532750FD40006AF24A /* RandomUserLogicController.swift */,
-				593F323C2754FF7B00E809DF /* UserLogicController.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -369,28 +439,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				5975A4522750F6B8006AF24A /* Respone.swift in Sources */,
+				594BA37927590D07008264FF /* HTTPComponents.swift in Sources */,
+				594BA37727590C8B008264FF /* Endpoint.swift in Sources */,
+				594BA386275971A2008264FF /* RandomUserAPIConfig.swift in Sources */,
 				59BE3AE4275271E900F8998E /* Constants.swift in Sources */,
 				5975A448274FFBC7006AF24A /* NetworkController.swift in Sources */,
 				59BE3ADF2752495F00F8998E /* RandomUserView.swift in Sources */,
+				594BA37D27590D5F008264FF /* HTTPTask.swift in Sources */,
 				5975A44E275000DF006AF24A /* DummyEndPoint.swift in Sources */,
 				593F323D2754FF7B00E809DF /* UserLogicController.swift in Sources */,
 				59BE3AE62753A4FD00F8998E /* Color + Hex.swift in Sources */,
 				5975A43E274FF49A006AF24A /* UserList.swift in Sources */,
+				594BA38427597181008264FF /* DummyAPIConfig.swift in Sources */,
 				593F323B2754F6BC00E809DF /* UserRowView.swift in Sources */,
 				593F32392754F6A800E809DF /* UserView.swift in Sources */,
+				594BA37F27590F29008264FF /* RequestController.swift in Sources */,
 				593F323F2755030600E809DF /* UserViewModel.swift in Sources */,
 				59BE3ADC2752441500F8998E /* RandomUserViewModel.swift in Sources */,
 				5975A40F274FC695006AF24A /* ContentView.swift in Sources */,
 				5975A40D274FC695006AF24A /* GuessAgeAppApp.swift in Sources */,
+				594BA37B27590D36008264FF /* HTTPMethod.swift in Sources */,
+				594BA388275971ED008264FF /* APIEnvironment.swift in Sources */,
 				5975A4542750FD40006AF24A /* RandomUserLogicController.swift in Sources */,
 				5975A44C274FFDAD006AF24A /* RandomUserEndPoint.swift in Sources */,
 				5975A440274FF4DF006AF24A /* User.swift in Sources */,
+				594BA37027590927008264FF /* CustomError.swift in Sources */,
 				5975A4502750D4D8006AF24A /* Parsing.swift in Sources */,
 				5975A443274FF69A006AF24A /* CustomStringConvertible+Description.swift in Sources */,
 				5975A43C274FF2CA006AF24A /* RandomUser.swift in Sources */,
 				59BE3AE12752714900F8998E /* YearSelectorView.swift in Sources */,
 				59BE3AE82753ACAF00F8998E /* SuccessOrFailureView.swift in Sources */,
 				5975A446274FF9EF006AF24A /* APIError.swift in Sources */,
+				594BA37227590992008264FF /* ErrorStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

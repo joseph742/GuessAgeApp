@@ -2,7 +2,7 @@
 //  UserViewModel.swift
 //  GuessAgeApp
 //
-//  Created by Qasim Ahmed on 29/11/2021.
+//  Created by Joseph Umoru on 29/11/2021.
 //
 
 import Foundation
@@ -17,9 +17,8 @@ class UserViewModel: ObservableObject {
     }
     
     func fetchUsers() {
-        let networkController = NetworkController()
-        
-        let userLogicController = UsersLogicController(networkController: networkController)
+        let requestController = RequestController()
+        let userLogicController = UsersLogicController(requestController: requestController)
         
         userLogicController
             .getUsers()

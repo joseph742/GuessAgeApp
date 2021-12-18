@@ -2,7 +2,7 @@
 //  YearSelectorView.swift
 //  GuessAgeApp
 //
-//  Created by Qasim Ahmed on 27/11/2021.
+//  Created by Joseph Umoru on 27/11/2021.
 //
 
 import SwiftUI
