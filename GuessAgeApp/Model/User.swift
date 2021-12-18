@@ -2,7 +2,7 @@
 //  User.swift
 //  GuessAgeApp
 //
-//  Created by Umoru Joseph on 25/11/2021.
+//  Created by Joseph Umoru on 25/11/2021.
 //
 
 import Foundation

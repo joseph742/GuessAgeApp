@@ -49,8 +49,8 @@ class RandomUserViewModel: ObservableObject {
     }
     
     func fetchRandomUser() {
-        let networkController = NetworkController()
-        let logicController = RandomUserLogicController(networkController: networkController)
+        let requestController = RequestController()
+        let logicController = RandomUserLogicController(requestController: requestController)
         logicController
             .getUser()
             .receive(on: DispatchQueue.main)
@@ -83,8 +83,8 @@ class RandomUserViewModel: ObservableObject {
     func addUser() {
         
         if let result = randomUserData?.results[0] {
-            let networkController = NetworkController()
-            let logicController = UsersLogicController(networkController: networkController)
+            let requestController = RequestController()
+            let logicController = UsersLogicController(requestController: requestController)
             
             logicController
                 .addUser(result: result)

@@ -2,7 +2,7 @@
 //  UserRowView.swift
 //  GuessAgeApp
 //
-//  Created by Qasim Ahmed on 29/11/2021.
+//  Created by Joseph Umoru on 29/11/2021.
 //
 
 import SwiftUI

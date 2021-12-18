@@ -7,47 +7,32 @@
 
 import Foundation
 
-struct DummyEndPoint {
+struct DummyEndPoint: Endpoint {
     var path: String
-    var queryItems: [URLQueryItem] = []
-}
-
-
-extension DummyEndPoint {
-    var components: URLComponents {
-        var components = URLComponents()
-        components.scheme = "https"
-        components.host = "dummyapi.io"
-        components.path = "/data/v1" + path
-        components.queryItems = queryItems
-        
-        components.queryItems = [
-          URLQueryItem(name: "created", value: "1"),
-        ]
-        
-        return components
-    }
     
-    var headers: [String: Any] {
-        return [
-            "app-id": "615d4b92dbf0d4a4759c1740",
-            "Content-Type": "application/x-www-form-urlencoded"
-        ]
+    var httpMethod: HTTPMethod
+    
+    var task: HTTPTask
+    
+    var headers: HTTPHeaders? {
+        return ["app-id": "615d4b92dbf0d4a4759c1740", "Content-Type": "application/x-www-form-urlencoded"]
     }
 }
 
 extension DummyEndPoint {
     static var users: Self {
-        return DummyEndPoint(path: "/user")
+        return DummyEndPoint(path: "data/v1/user/", httpMethod: .get, task: .request(query: ["created":"1"]))
     }
     
     static func user(id: String) -> Self {
-        return DummyEndPoint(path: "/user/\(id)")
+        
+        return DummyEndPoint(path: "data/v1/user/\(id)/", httpMethod: .get, task: .request(query: ["created":"1"]))
     }
     
     static func addUser(result: Result) -> Self {
         
         let bodyData = [
+            
             URLQueryItem(name: "title", value: result.name.title.lowercased()),
             URLQueryItem(name: "firstName", value: result.name.first),
             URLQueryItem(name: "lastName", value: result.name.last),
@@ -63,10 +48,6 @@ extension DummyEndPoint {
             URLQueryItem(name: "location[timezone]", value: result.location.timezone.offset)
         ]
         
-        
-        
-        
-        
-        return DummyEndPoint(path: "/user/create", queryItems: bodyData)
+        return DummyEndPoint(path: "data/v1/user/create", httpMethod: .post, task: .request(body: bodyData, query: ["created":"1"]))
     }
 }

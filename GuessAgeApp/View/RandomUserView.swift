@@ -2,7 +2,7 @@
 //  RandomUserView.swift
 //  GuessAgeApp
 //
-//  Created by Qasim Ahmed on 27/11/2021.
+//  Created by Joseph Umoru on 27/11/2021.
 //
 
 import SwiftUI
@@ -20,7 +20,7 @@ struct RandomUserView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(hex: "D11149")
+                Color("backgroundColor-1")
                     .ignoresSafeArea()
                 
                 VStack {
@@ -111,7 +111,7 @@ struct RandomUserView: View {
 
                     }
                     .padding()
-                    .background(Color(hex: "FFFFB3"))
+                    .background(Color("backgroundColor-2"))
                     .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
                     .shadow(color: .black.opacity(0.2), radius: 20, x: 0, y: 20)
                     
