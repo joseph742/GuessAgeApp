@@ -45,6 +45,7 @@
 		59BE3AE4275271E900F8998E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BE3AE3275271E900F8998E /* Constants.swift */; };
 		59BE3AE62753A4FD00F8998E /* Color + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BE3AE52753A4FD00F8998E /* Color + Hex.swift */; };
 		59BE3AE82753ACAF00F8998E /* SuccessOrFailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BE3AE72753ACAF00F8998E /* SuccessOrFailureView.swift */; };
+		59C8D822276E16B80030E9BA /* TextStyleGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C8D821276E16B80030E9BA /* TextStyleGuides.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		59BE3AE3275271E900F8998E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		59BE3AE52753A4FD00F8998E /* Color + Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Hex.swift"; sourceTree = "<group>"; };
 		59BE3AE72753ACAF00F8998E /* SuccessOrFailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessOrFailureView.swift; sourceTree = "<group>"; };
+		59C8D821276E16B80030E9BA /* TextStyleGuides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleGuides.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 		5975A438274FC8A5006AF24A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				59C8D820276E16880030E9BA /* Style Guide */,
 				59BE3ADD2752441B00F8998E /* ViewModel */,
 				59BE3ADE2752495F00F8998E /* RandomUserView.swift */,
 				59BE3AE02752714900F8998E /* YearSelectorView.swift */,
@@ -306,6 +309,14 @@
 				593F323E2755030600E809DF /* UserViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		59C8D820276E16880030E9BA /* Style Guide */ = {
+			isa = PBXGroup;
+			children = (
+				59C8D821276E16B80030E9BA /* TextStyleGuides.swift */,
+			);
+			path = "Style Guide";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +464,7 @@
 				594BA38427597181008264FF /* DummyAPIConfig.swift in Sources */,
 				593F323B2754F6BC00E809DF /* UserRowView.swift in Sources */,
 				593F32392754F6A800E809DF /* UserView.swift in Sources */,
+				59C8D822276E16B80030E9BA /* TextStyleGuides.swift in Sources */,
 				594BA37F27590F29008264FF /* RequestController.swift in Sources */,
 				593F323F2755030600E809DF /* UserViewModel.swift in Sources */,
 				59BE3ADC2752441500F8998E /* RandomUserViewModel.swift in Sources */,

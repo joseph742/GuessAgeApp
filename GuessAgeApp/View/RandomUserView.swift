@@ -16,6 +16,7 @@ struct RandomUserView: View {
         self.viewModel = viewModel
     }
     
+    let gradient: LinearGradient = LinearGradient(colors: [Color("backgroundColor-2"), Color("backgroundColor-1")], startPoint: .top, endPoint: .bottom)
     
     var body: some View {
         NavigationView {
